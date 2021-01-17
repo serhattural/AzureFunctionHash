@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Recruitment.API.Clients
 {
-    public class HashFuncClient : IHashFuncClient
+    public class HashFuncClient : BaseFuncClient, IHashFuncClient
     {
         private readonly HttpClient client;
         private readonly FunctionConfig functionConfig;
