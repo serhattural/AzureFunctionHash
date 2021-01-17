@@ -4,8 +4,8 @@
 - Generic function client implemented. Reads from appsettings.json and use as dictionary. Appsettings key and function client class name should be same.
 - I implemented unit test for Azure Function.
 
-Api url: https://recruitmentapi20210117153645.azurewebsites.net/api/hash  
-Api test: Send a post request { "login":"serhat", "password":"pwd" }
+Api Url: https://recruitmentapi20210117153645.azurewebsites.net/api/hash  
+Api Test: Send a post request { "login":"serhat", "password":"pwd" }
 
-Function url: https://sthash.azurewebsites.net/api/hashfunction  
+Function URL: https://sthash.azurewebsites.net/api/hashfunction  
 Function Test: https://sthash.azurewebsites.net/api/hashfunction/serhat+pwd
