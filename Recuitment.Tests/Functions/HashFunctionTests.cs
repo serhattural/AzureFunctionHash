@@ -29,5 +29,19 @@ namespace Recruitment.Functions.Tests
             //Assert
             Assert.AreEqual(expectedValue, response.Value);
         }
+
+        [Test()]
+        public async Task Http_trigger_emptykey_should_return_badrequest()
+        {
+            //Arrange
+            string key = "";
+
+            //Act
+            var request = TestFactory.CreateHttpRequest("key", key);
+            var response = await HashFunction.Run(request, key, logger);
+
+            //Assert
+            Assert.IsInstanceOf<BadRequestObjectResult>(response);
+        }
     }
 }
