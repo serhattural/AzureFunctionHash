@@ -5,7 +5,7 @@
 - I implemented unit test for Azure Function.
 
 Api url: https://recruitmentapi20210117153645.azurewebsites.net/api/hash  
-Apı test: Send a post request same as your document. { "login":"serhat", "password":"pwd" }
+Api test: Send a post request { "login":"serhat", "password":"pwd" }
 
 Function url: https://sthash.azurewebsites.net/api/hashfunction  
 Function Test: https://sthash.azurewebsites.net/api/hashfunction/serhat+pwd
